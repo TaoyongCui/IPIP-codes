@@ -484,7 +484,7 @@ class PainnModel(nn.Module):
             nn.SiLU(),
             nn.Linear(self.hidden_state_size, 1),
         )
-        self.readout_uncertainty = update_u(self.hidden_state_size, self.hidden_state_size)
+
         # Normalisation constants
         self.register_buffer("normalization", torch.tensor(normalization))
         self.register_buffer("atomwise_normalization", torch.tensor(atomwise_normalization))
