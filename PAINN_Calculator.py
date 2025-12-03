@@ -3,7 +3,7 @@ from torch_geometric.data import Data, DataLoader
 import logging
 import numpy as np
 from ase.calculators.calculator import Calculator, all_changes
-from painn import PainnModel
+from PaiNN import PainnModel
 
 log = logging.getLogger(__name__)
 
